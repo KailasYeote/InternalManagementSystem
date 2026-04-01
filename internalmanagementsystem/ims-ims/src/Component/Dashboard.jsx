@@ -102,6 +102,8 @@ const Dashboard = () => {
 
 //https://github.com/KailasYeote/InternalManagementSystem.git
 
+//postgresql://my_db_jc05_user:NzZOCCN0ItHYgkWZTOawQYBq1pIb2acA@dpg-d76lsg0ule4c73f1ouo0-a/my_db_jc05
+
 
 
 export default Dashboard;

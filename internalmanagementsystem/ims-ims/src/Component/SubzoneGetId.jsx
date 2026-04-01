@@ -13,7 +13,7 @@ const SubzoneGetId = () => {
             setError("");
             setSubzoneId(null);
             const response = await axios.get(
-                "http://localhost:8080/ims/v1/subzone/search",
+                `${import.meta.env.VITE_API_BASE_URL}/subzone/search`,
                 { params: { name, location } }
             );
             setSubzoneId(response.data.subzone_Id);

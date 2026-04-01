@@ -25,7 +25,7 @@ const Register = () => {
         }
 
         try {
-            const res = await axios.post("http://localhost:8080/api/register", user);
+            const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/register`, user);
             alert(res.data);
 
             if (res.data === "User Registered Successfully") {
@@ -62,7 +62,7 @@ const Register = () => {
                     </select>
 
                     <button type="submit">Create Account</button>
-                    
+
                     <p>
                         Already have an account? <Link to="/login">Login</Link>
                     </p>

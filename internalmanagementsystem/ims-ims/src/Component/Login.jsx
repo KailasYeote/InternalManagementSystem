@@ -24,7 +24,7 @@ const Login = () => {
         }
 
         try {
-            const res = await axios.post("http://localhost:8080/api/login", user);
+            const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/login`, user);
 
             if (res.data === "Login Success") {
 
@@ -35,7 +35,7 @@ const Login = () => {
                 const userAttKey = `attendance_${user.username}`;
                 let currentAttendance = parseInt(localStorage.getItem(userAttKey)) || 0;
                 currentAttendance += 1;
-                
+
                 // Save it persistently for the user, and also save a quick-read key for the active session
                 localStorage.setItem(userAttKey, currentAttendance);
                 localStorage.setItem("active_attendance", currentAttendance);

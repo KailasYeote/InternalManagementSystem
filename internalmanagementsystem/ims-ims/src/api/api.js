@@ -7,4 +7,4 @@ const api = axios.create({
     },
 });
 
-export default apiClient;
+export default api;

@@ -1,0 +1,108 @@
+/* Subzone page premium styles */
+.subzone-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subzone-container h2 {
+    margin: 0 0 10px 0;
+    color: #0f172a;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.form-group:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.form-group input {
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    transition: 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4facfe;
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.15);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-add {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px dashed #0ea5e9;
+    background: #f0f9ff;
+    color: #0ea5e9;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+.btn-add:hover {
+    background: #e0f2fe;
+}
+
+.btn-submit {
+    flex: 2;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+}

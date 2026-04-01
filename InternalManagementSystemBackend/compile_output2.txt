@@ -1,0 +1,45 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.example:InternalManagementSystem >----------------
+[INFO] Building InternalManagementSystem 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ InternalManagementSystem ---
+[INFO] Deleting G:\internalManagementSystemupdate\InternalManagementSystemBackend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ InternalManagementSystem ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ InternalManagementSystem ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 47 source files with javac [debug parameters release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /G:/internalManagementSystemupdate/InternalManagementSystemBackend/src/main/java/com/example/InternalManagementSystem/Entity/Invoices.java:[26,13] cannot access com.example.InternalManagementSystem.Entity.InvoiceStatus
+  bad source file: G:\internalManagementSystemupdate\InternalManagementSystemBackend\src\main\java\com\example\InternalManagementSystem\Entity\InvoiceStatus.java
+    file does not contain class com.example.InternalManagementSystem.Entity.InvoiceStatus
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.953 s
+[INFO] Finished at: 2026-04-01T18:06:49+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project InternalManagementSystem: Compilation failure
+[ERROR] /G:/internalManagementSystemupdate/InternalManagementSystemBackend/src/main/java/com/example/InternalManagementSystem/Entity/Invoices.java:[26,13] cannot access com.example.InternalManagementSystem.Entity.InvoiceStatus
+[ERROR]   bad source file: G:\internalManagementSystemupdate\InternalManagementSystemBackend\src\main\java\com\example\InternalManagementSystem\Entity\InvoiceStatus.java
+[ERROR]     file does not contain class com.example.InternalManagementSystem.Entity.InvoiceStatus
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

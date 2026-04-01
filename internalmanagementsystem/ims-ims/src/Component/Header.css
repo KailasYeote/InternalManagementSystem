@@ -1,0 +1,163 @@
+.app-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eef2f6;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 28px;
+    color: #4facfe;
+    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.4));
+}
+
+.logo-title {
+    font-size: 22px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #556987;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    color: #4facfe;
+    background: rgba(79, 172, 254, 0.08);
+}
+
+.nav-links a.active {
+    color: #4facfe;
+    background: rgba(79, 172, 254, 0.12);
+    font-weight: 600;
+}
+
+/* Attendance */
+.attendance-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #f8fafc;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.icon-subtle {
+    color: #64748b;
+}
+
+.attendance-badge {
+    background: #4facfe;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(79, 172, 254, 0.4);
+}
+
+/* Auth Section */
+.auth-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user-badge svg {
+    color: #4facfe;
+}
+
+/* Buttons */
+.btn-logout,
+.btn-login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-logout {
+    background: transparent;
+    color: #ef4444;
+}
+
+.btn-logout:hover {
+    background: #fef2f2;
+}
+
+.btn-login {
+    background: #4facfe;
+    color: white;
+    box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
+.btn-login:hover {
+    background: #3e9ce3;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
+}

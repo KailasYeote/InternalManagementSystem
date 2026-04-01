@@ -1,0 +1,44 @@
+/* Updated Layout Styles */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 70px); /* Account for new header height */
+    background-color: #f8fafc; /* Professional subtle gray background */
+}
+
+/* Base styles for the outer Dashboard column wrapper (handled by Dashboard component itself or Layout flex spacing) */
+/* We don't want old .dashboard conflicts */
+.dashboard {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    width: auto;
+    min-height: auto;
+    transition: none;
+    flex-shrink: 0;
+}
+
+.content {
+    flex: 1;
+    margin-left: 0; /* Remove old offset */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+/* Responsive Handling */
+@media (max-width: 992px) {
+    .content {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .content {
+        padding: 16px;
+    }
+}

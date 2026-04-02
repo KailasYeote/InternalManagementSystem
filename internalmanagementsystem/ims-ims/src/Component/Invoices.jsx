@@ -11,7 +11,7 @@ const Invoice = () => {
         const loadInvoices = async () => {
             try {
                 // Always fetch the freshest invoices from backend
-                const res = await apiClient.get("/invoice");
+                const res = await apiClient.get("/api/invoice");
                 setInvoices(res.data);
                 localStorage.setItem("invoices", JSON.stringify(res.data));
             } catch (err) {

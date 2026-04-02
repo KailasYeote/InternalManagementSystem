@@ -65,7 +65,7 @@ const Estimate = () => {
     // 🔹 View Invoices
     const viewInvoices = async () => {
         try {
-            const response = await apiClient.get("/invoice");
+            const response = await apiClient.get("/api/invoice");
             navigate("/invoice", { state: { invoices: response.data } });
         } catch (error) {
             console.error(error);
@@ -78,7 +78,7 @@ const Estimate = () => {
         try {
             const id = estimate?.estimateId || estimate?.id;
 
-            await apiClient.post(`/invoice/convert/${id}`);
+            await apiClient.post(`/api/invoice/convert/${id}`);
             alert("Invoice Created Successfully ✅");
 
             // redirect after success

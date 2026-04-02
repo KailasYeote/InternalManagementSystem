@@ -11,7 +11,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchInvoices = async () => {
             try {
-                const res = await apiClient.get("/invoice");
+                const res = await apiClient.get("/api/invoice");
 
                 // ✅ Save in localStorage
                 localStorage.setItem("invoices", JSON.stringify(res.data));

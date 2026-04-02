@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*") // ← added
 @RestController
-@RequestMapping("/ims/v1/group")
+@RequestMapping("/api/group")
 public class GroupController {
 
     private final GroupServiceImpl groupService;

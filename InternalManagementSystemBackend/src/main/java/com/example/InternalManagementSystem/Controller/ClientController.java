@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*") // ← added
 @RestController
-@RequestMapping("/ims/v1/client")
+@RequestMapping("/api/client")
 public class ClientController {
 
     private final ClientServiceImpl clientService;

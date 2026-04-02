@@ -6,8 +6,9 @@ import com.example.InternalManagementSystem.Service.EstimateService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "*") // ← added
 @RestController
-@RequestMapping("/ims/v1/estimate")
+@RequestMapping("/api/estimate")
 public class EstimateController {
 
     private final EstimateService estimateService;
@@ -20,7 +21,7 @@ public class EstimateController {
     @PostMapping("/{subzoneId}")
     public ResponseEntity<EstimateResponseDto> generateEstimate(
             @PathVariable int subzoneId,
-            @RequestBody EstimateRequestDto requestDto) {  // ✅ Use DTO not Entity
+            @RequestBody EstimateRequestDto requestDto) { // ✅ Use DTO not Entity
 
         return ResponseEntity.ok(estimateService.generateEstimate(subzoneId, requestDto));
     }
@@ -33,9 +34,9 @@ public class EstimateController {
     }
 
     @PutMapping("/{estimateId}")
-    public ResponseEntity<EstimateResponseDto> updateEstimate(  // ✅ Return DTO not Entity
-                                                                @PathVariable int estimateId,
-                                                                @RequestBody EstimateRequestDto requestDto) {
+    public ResponseEntity<EstimateResponseDto> updateEstimate( // ✅ Return DTO not Entity
+            @PathVariable int estimateId,
+            @RequestBody EstimateRequestDto requestDto) {
 
         return ResponseEntity.ok(estimateService.updateEstimate(estimateId, requestDto));
     }

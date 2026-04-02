@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "*") // Fix 1: Allows your React frontend to access this API
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class AuthController {
@@ -16,7 +16,6 @@ public class AuthController {
     @Autowired
     private UserRepository userRepository;
 
-    // Fix 2: Added a simple test endpoint to verify the backend is "Live"
     @GetMapping("/test")
     public ResponseEntity<String> test() {
         return ResponseEntity.ok("Backend is connected and working!");

@@ -14,8 +14,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/ims/v1/invoice")
+@RequestMapping("/api/invoice") // ← Fixed path
 public class InvoiceController {
 
     @Autowired
@@ -24,7 +25,7 @@ public class InvoiceController {
     @Autowired
     private EstimateRepo estimateRepo;
 
-    @GetMapping("")
+    @GetMapping
     public ResponseEntity<List<Invoices>> getAllInvoices() {
         return ResponseEntity.ok(invoiceRepository.findAll());
     }
@@ -37,8 +38,8 @@ public class InvoiceController {
         }
 
         Estimates estimate = estimateOpt.get();
-
         Clients client = null;
+
         try {
             client = estimate.getSubzones().getClient();
         } catch (Exception e) {
@@ -56,7 +57,6 @@ public class InvoiceController {
         invoice.setStatus(InvoiceStatus.CREATED);
 
         invoiceRepository.save(invoice);
-
         return ResponseEntity.ok("Invoice Created Successfully");
     }
 }

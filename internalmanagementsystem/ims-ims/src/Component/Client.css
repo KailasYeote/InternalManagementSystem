@@ -79,3 +79,12 @@
     border-radius: 6px;
     border: 1px solid #ccc;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .client-container {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+}

@@ -106,3 +106,18 @@
     color: #007bff;
     text-decoration: underline;
 }
+
+/* Responsive Handling */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    .login-box h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .login-box input {
+        padding: 12px;
+    }
+}

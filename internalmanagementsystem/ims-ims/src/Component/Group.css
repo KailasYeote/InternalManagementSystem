@@ -195,8 +195,15 @@
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .groups-grid {
         grid-template-columns: 1fr;
+    }
+    .group-form-card {
+        padding: 20px;
+        width: 95%;
+    }
+    .group-container {
+        margin: 30px auto;
     }
 }

@@ -108,3 +108,19 @@
     color: #007bff;
     text-decoration: underline;
 }
+
+/* Responsive Handling */
+@media (max-width: 480px) {
+    .register-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    .register-box h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .register-box input,
+    .register-box select {
+        padding: 12px;
+    }
+}

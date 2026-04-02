@@ -145,3 +145,17 @@
     padding-left: 20px;
     color: #475569;
 }
+
+/* Responsive Modifications */
+@media (max-width: 768px) {
+    .estimate-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .form-box, .result-box {
+        padding: 20px;
+    }
+    .form-box h2, .result-box h2 {
+        font-size: 20px;
+    }
+}

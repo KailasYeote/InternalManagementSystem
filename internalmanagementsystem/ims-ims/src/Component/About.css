@@ -78,7 +78,18 @@
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+    .about-container {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 768px) {
+    .about-container {
+        margin-left: 0;
+        padding: 20px 15px;
+        margin-top: 10px;
+    }
     .about-card {
         padding: 25px;
     }

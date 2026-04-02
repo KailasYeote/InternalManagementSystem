@@ -101,6 +101,13 @@
 }
 
 /* Mobile responsive */
+@media (max-width: 768px) {
+    .subzone-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
 @media (max-width: 600px) {
     .action-buttons {
         flex-direction: column;

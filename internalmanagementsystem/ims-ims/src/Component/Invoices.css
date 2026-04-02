@@ -78,9 +78,19 @@
 }
 
 @media (max-width: 768px) {
+    .invoice-container {
+        padding: 15px;
+        margin: 20px auto;
+        width: 100%;
+        border-radius: 8px;
+    }
     .invoice-table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+    .invoice-table th,
+    .invoice-table td {
+        padding: 12px 10px;
     }
 }

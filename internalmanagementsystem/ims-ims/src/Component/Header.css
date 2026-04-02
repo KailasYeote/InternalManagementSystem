@@ -161,3 +161,44 @@
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
 }
+
+/* Responsive Handling */
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 16px;
+    }
+    .nav-links a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    .user-profile {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-header {
+        position: relative;
+    }
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 16px;
+        gap: 16px;
+    }
+    .logo-section {
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .auth-section {
+        width: 100%;
+        justify-content: center;
+    }
+}
